@@ -22,5 +22,6 @@ class Agent(object):
     
         #print(observation)
         self.steps += 1
-        print(self.action)
+        
+        #print(self.action)
         return self.action
