@@ -16,7 +16,7 @@ class Agent(object):
         self.steps = 0
         self.action = None
     def act(self, observation):
-        if self.steps%self.skip_frames == 4:
+        if self.steps%self.skip_frames == 0:
             self.frames.add_frame(observation)
             self.action = self.agent.get_action(self.frames.get(),True)
     
