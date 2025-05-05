@@ -10,7 +10,7 @@ class Agent(object):
 
         self.frames = State_Frame()
         self.agent = DQNAgent(240,12,"cpu")
-        self.agent.load_model("q_best_network.pth","target_network.pth")
+        self.agent.load_model("q_best_network.pth","target_best_network.pth")
         print("load")
         self.skip_frames = 5
         self.steps = 0
